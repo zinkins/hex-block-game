@@ -31,7 +31,35 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+### Interface-First Architecture
+- [ ] Interfaces defined for all major components
+- [ ] Composition over inheritance preferred
+- [ ] Immutable state strategy documented
+- [ ] DI container dependency mapping provided
+
+### Test-Driven Development Compliance
+- [ ] Test plan with TDD approach documented
+- [ ] Unit test coverage strategy defined
+- [ ] Integration test scope identified
+- [ ] Performance test requirements included
+
+### Performance Requirements
+- [ ] 60 FPS target confirmed for feature
+- [ ] Memory usage impact assessed
+- [ ] Load time requirements documented
+- [ ] Optimization strategies outlined
+
+### User Experience Consistency
+- [ ] Design system alignment verified
+- [ ] Cross-platform testing planned
+- [ ] Accessibility considerations documented
+- [ ] Visual feedback consistency confirmed
+
+### Rapid Iteration Compatibility
+- [ ] Modular service design confirmed
+- [ ] Event-driven architecture integration planned
+- [ ] Extension points documented
+- [ ] No breaking changes to existing contracts
 
 ## Project Structure
 

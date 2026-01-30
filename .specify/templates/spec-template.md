@@ -18,6 +18,13 @@
   - Tested independently
   - Deployed independently
   - Demonstrated to users independently
+  
+  CONSTITUTION COMPLIANCE REQUIRED:
+  - Interface-first design for all components
+  - TDD approach with test scenarios defined
+  - Performance impact assessment (60 FPS target)
+  - UX consistency across platforms
+  - Extensibility for future iterations
 -->
 
 ### User Story 1 - [Brief Title] (Priority: P1)
