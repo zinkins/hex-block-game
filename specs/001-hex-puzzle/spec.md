@@ -138,13 +138,39 @@ Players can complete games and restart with proper session management.
 - **FR-013**: System MUST provide visual feedback for figure selection (15% scale increase, golden glow)
 - **FR-014**: System MUST provide audio feedback for figure interaction (pick/place/destroy sounds)
 - **FR-015**: System MUST display current score and combo multiplier during gameplay
+- **FR-016**: System MUST support configurable color themes for game elements (board, figures, UI)
+- **FR-017**: System MUST provide configurable audio options with individual mute controls
+- **FR-018**: System MUST maintain 60 FPS performance with unlimited simultaneous visual effects
+- **FR-019**: System MUST implement mobile-first touch controls with proper fallback mechanisms
+- **FR-020**: System MUST use figure types exactly as defined in PRD section 2 (Игровые механики)
 
 ### Key Entities
 
-- **Game Board**: Hexagonal grid with 61 cells using axial coordinate system (q, r), supports figure placement and line detection
-- **Game Figure**: Composed of 1-4 hexagonal cells with specific coordinate patterns, has assigned color from palette
+- **Game Board**: Hexagonal grid with 61 cells using axial coordinate system (q, r), supports figure placement and line detection, configurable color themes
+- **Game Figure**: Composed of 1-4 hexagonal cells with specific coordinate patterns (custom defined from PRD), has assigned color from configurable palette
 - **Player Score**: Accumulated points from cell placement and line destruction, affected by combo multipliers
 - **Game Session**: Manages game state, figure generation, and progression from start to game over
+- **Audio System**: Provides configurable sound effects with mute options for selection, placement, and destruction actions
+- **Touch Controls**: Mobile-first interaction system with fallback support for other input methods
+
+### Non-Functional Requirements
+
+- **NFR-001**: System MUST maintain 60 FPS performance under all conditions including unlimited simultaneous visual effects
+- **NFR-002**: System MUST support mobile-first touch controls with proper keyboard and mouse fallback mechanisms
+- **NFR-003**: System MUST provide configurable color themes allowing player customization of visual elements
+- **NFR-004**: System MUST support configurable audio with individual mute controls for different sound types
+- **NFR-005**: System MUST render responsively across all target resolutions (320x480 to 4k) without performance degradation
+- **NFR-006**: System MUST provide visual feedback within 100ms of all user interactions
+
+## Clarifications
+
+### Session 2026-01-30
+
+- Q: What are the specific figure types and their coordinate patterns? → A: Custom defined shapes from PRD
+- Q: What are the performance targets and scalability constraints? → A: 60 FPS minimum, unlimited simultaneous effects
+- Q: How should the game handle accessibility requirements? → A: Mobile-first touch controls with fallback
+- Q: What color palette should be used for game elements? → A: Theme-agnostic (configurable)
+- Q: What are the audio feedback requirements? → A: Configurable audio with mute options
 
 ## Success Criteria *(mandatory)*
 
@@ -160,3 +186,8 @@ Players can complete games and restart with proper session management.
 - **SC-008**: Audio feedback provides appropriate confirmation for all game actions (selection, placement, destruction)
 - **SC-009**: Game board renders correctly and responsively across all target resolutions (320x480 to 4k)
 - **SC-010**: Players can complete a full game session from start to game over without technical errors
+- **SC-011**: Game supports configurable color themes allowing player customization
+- **SC-012**: Audio system provides configurable mute options for individual sound types
+- **SC-013**: Game maintains 60 FPS performance with unlimited simultaneous visual effects
+- **SC-014**: Mobile-first touch controls with proper fallback mechanisms implemented
+- **SC-015**: Figure types exactly match custom defined shapes from PRD section 2
